@@ -1,3 +1,4 @@
+syntax on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
 "       Shubhojit Chattopadhyay
@@ -109,7 +110,8 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme default
+colorscheme desert
+set gfn=Monospace\ 9
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -378,3 +380,4 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
